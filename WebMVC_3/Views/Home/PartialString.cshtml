@@ -1,0 +1,13 @@
+﻿@using WebMVC_3.Models
+@model IEnumerable<string>
+
+<p>Partial view with strings</p>
+
+<select>
+
+    @foreach (string item in Model)
+    {
+        <option>@item</option>
+    }
+</select>
+

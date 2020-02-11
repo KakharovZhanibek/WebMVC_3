@@ -1,0 +1,11 @@
+﻿@using WebMVC_3.Models
+@model IEnumerable<City>
+    
+<p>Partial view</p>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item.Name</li>
+    }
+</ul>

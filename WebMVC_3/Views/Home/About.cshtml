@@ -1,0 +1,29 @@
+﻿@using WebMVC_3.Models
+@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Use this area to provide additional information.</p>
+
+@Html.Partial("Partial", new List<City>
+{
+    new City { Id = 9, Name = "Astana" },
+    new City { Id = 11, Name = "Moscow" }
+});
+@Html.Partial("PartialString", new List<string>
+{
+    "Once",
+    "i've",
+    "seven",
+    "years",
+    "old"
+});
+
+@*@section Footer{
+        Все права защищены
+    }
+    @section blabla{
+        blabla
+    }*@
